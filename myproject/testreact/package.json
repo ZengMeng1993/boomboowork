@@ -1,0 +1,30 @@
+{
+	"name": "testreact",
+	"version": "0.0.1",
+	"private": true,
+	"scripts": {
+		"start": "node node_modules/react-native/local-cli/cli.js start",
+		"bundle-ios": "react-native bundle --entry-file index.js --bundle-output ./ios/main.jsbundle --platform ios --assets-dest ./ios --dev false",
+		"bundle-android": "react-native bundle --entry-file index.js --bundle-output ./android/app/src/main/assets/index.android.bundle --platform android --assets-dest ./android/app/src/main/res --dev false"
+	},
+	"dependencies": {
+		"react": "16.0.0-beta.5",
+		"react-native": "0.49.5",
+		"react-native-keyboard-aware-scroll-view": "^0.4.1",
+		"react-native-spinkit": "^1.1.1",
+		"react-native-splash-screen": "^3.0.6",
+		"react-native-storage": "^0.2.2",
+		"react-native-swRefresh": "^1.2.3",
+		"react-native-swiper": "^1.5.13",
+		"react-navigation": "^1.0.0-beta.19"
+	},
+	"devDependencies": {
+		"babel-jest": "21.2.0",
+		"babel-preset-react-native": "4.0.0",
+		"jest": "21.2.1",
+		"react-test-renderer": "16.0.0-beta.5"
+	},
+	"jest": {
+		"preset": "react-native"
+	}
+}
